@@ -34,7 +34,15 @@ If the prompt reappears after the script has run, the Docker container is still 
 
 When you see the following lines in the output
 
-...
+```
+PostgreSQL init process complete; ready for start up.
+2024-09-09 14:22:15.789 UTC [1] LOG:  starting PostgreSQL 16.4 (Debian 16.4-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2024-09-09 14:22:15.791 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2024-09-09 14:22:15.791 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2024-09-09 14:22:15.792 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-09-09 14:22:15.798 UTC [938] LOG:  database system was shut down at 2024-09-09 14:22:15 UTC
+2024-09-09 14:22:15.807 UTC [1] LOG:  database system is ready to accept connections
+```
 
 it means that the container installation is complete.
 Please stop the execution of the script 02_check_setup.sh with the key combination <CTRL + C>.
