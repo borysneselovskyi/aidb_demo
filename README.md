@@ -5,7 +5,7 @@ All steps are described in the EDB documentation: https://www.enterprisedb.com/d
 
 This demo has been developed for MacOS.
 
-# Install the d
+# Install the demo environment
 
 You will need to have docker installed and two tokens:
 1. EDB token to download EDB software from EDB repository
@@ -13,24 +13,24 @@ You will need to have docker installed and two tokens:
 
 First, the EDB software token and the OpenAI key are added to the variables in the 01_setup.sh script:
 
-'''
+```
 export EDB_REPO_TOKEN="<add your EDB Repo Token>"
 export OPENAI_API_KEY="<add your OPENAI API Key>"
-'''
+```
 
 Install and start the docker container with the PostgreSQL instance with the aidb extension:
 
-'''
+```
 ./01_setup.sh
-'''
+```
 
 The script will launch the docker application, pull the docker image from the EDB repository, and install the docker container with the aidb extension.
 
 If the prompt reappears after the script has run, the Docker container is still being initialised in the background. Please check the status of the installation by running the 02_check_setup.sh script. Full initialisation can take up to 10 minutes.
 
-'''
+```
 ./02_check_setup.sh
-'''
+```
 
 When you see the following lines in the output
 
@@ -41,22 +41,22 @@ Please stop the execution of the script 02_check_setup.sh with the key combinati
 
 Now we can test the connection to postgres by executing of 05_check_connection.sh:
 
-'''
+```
 ./05_check_connection.sh
-'''
+```
 
 # Run the demo
 Run the demo - please use the "Enter" key to proceed to the next step of the demo:
 
-'''
+```
 ./03_demo.sh
-'''
+```
 
 # Cleanup
 To cleanup the demo - stop and removethe docker container and stop the docker app, use the script:
 
-'''
+```
 ./04_clean.sh
-'''
+```
 
 
