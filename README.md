@@ -61,7 +61,7 @@ Run the demo - please use the "Enter" key to proceed to the next step of the dem
 ```
 
 # Cleanup
-To cleanup the demo - stop and removethe docker container and stop the docker app, use the script:
+To cleanup the demo - stop and remove the docker container and stop the docker app, use the script:
 
 ```
 ./04_clean.sh
