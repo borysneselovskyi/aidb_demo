@@ -7,7 +7,7 @@ select version();
 
 \! read -p "Install extension aidb"
 \! echo "\ncreate extension aidb cascade;\n"
--- create extension aidb cascade;
+create extension aidb cascade;
 
 \! read -p "..."
 \! echo "\nInstalled extensions\n"
