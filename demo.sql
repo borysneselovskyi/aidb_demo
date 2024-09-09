@@ -1,3 +1,4 @@
+\! clear
 \! echo "\nDatabase version and details\n"
 select version();
 
